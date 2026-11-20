@@ -41,31 +41,24 @@ function Home() {
       <section className="home-hero">
 
         <div className="hero-content">
-            <p style={{ color: "red", fontSize: "30px" }}>
-            TEST STUDENT
-            </p>
-        <h3>THE best website for studying</h3>
+
+          <h3>THE best website for studying</h3>
 
           <h1>
             STUDY
             <span>VAULT</span>
           </h1>
+
         </div>
 
-        {/* STUDENT */}
-        <img
-  src="/A_young_woman_with_glasses_and_a_ponytail_is_holding_a_stack_of_books-removebg-preview.png"
-  alt="Student holding books"
-  style={{
-    display: "block",
-    width: "400px",
-    height: "auto",
-    position: "absolute",
-    right: "20px",
-    bottom: "0",
-    zIndex: 9999
-  }}
-/>
+        {/* STUDENT IMAGE */}
+        <div className="hero-student">
+          <img
+            src="/A_young_woman_with_glasses_and_a_ponytail_is_holding_a_stack_of_books-removebg-preview.png"
+            alt="Student holding books"
+          />
+        </div>
+
       </section>
 
       {/* FEATURE CARDS */}

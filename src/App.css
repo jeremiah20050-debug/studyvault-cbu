@@ -1501,3 +1501,203 @@ body {
   position: absolute !important;
   right: 0 !important;
 }
+/* =========================
+   STUDYVAULT MOBILE FIX
+========================= */
+
+@media (max-width: 600px) {
+
+  /* TOP BAR */
+  .top-bar {
+    height: auto !important;
+    min-height: 45px;
+    padding: 8px 5px !important;
+    gap: 5px !important;
+    justify-content: center !important;
+  }
+
+  .top-brand {
+    display: none;
+  }
+
+  .top-phone {
+    font-size: 11px;
+    letter-spacing: 1px;
+    left: 10px !important;
+    transform: none !important;
+  }
+
+  .top-right {
+    right: 5px !important;
+  }
+
+  .social-icon {
+    width: 23px;
+    height: 23px;
+    font-size: 13px;
+  }
+
+  .help-button {
+    min-width: 55px;
+    font-size: 12px;
+  }
+
+  /* NAVIGATION */
+  .home-navbar {
+    min-height: auto;
+    padding: 15px 10px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .home-logo {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .home-logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .home-logo h1 {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+
+  .home-nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .home-nav-links a {
+    font-size: 13px;
+  }
+
+  .home-nav-links a:nth-child(3),
+  .home-nav-links a:nth-child(4) {
+    padding: 7px 12px;
+  }
+
+  /* HERO */
+  .home-hero {
+    min-height: 500px;
+    padding: 45px 20px;
+    align-items: flex-start;
+    background-position: center;
+  }
+
+  .hero-content {
+    margin-top: 10px;
+    z-index: 10;
+  }
+
+  .hero-content h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .hero-content h1 {
+    font-size: 55px;
+    line-height: 1;
+  }
+
+  .hero-content h1 span {
+    font-size: 45px;
+    letter-spacing: 3px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    max-width: 260px;
+  }
+
+  /* STUDENT IMAGE */
+  .hero-student {
+    height: 300px;
+    width: auto;
+    max-width: 85%;
+    right: -10px;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .hero-student img {
+    width: 280px;
+    max-width: 85vw;
+    height: auto;
+  }
+
+  /* FEATURE CARDS */
+  .home-features {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+
+  .feature-card {
+    min-height: 180px;
+    padding: 25px 20px;
+    border-radius: 25px;
+  }
+
+  .feature-card h2 {
+    font-size: 23px;
+  }
+
+  .feature-card p {
+    font-size: 15px;
+  }
+
+  /* OTHER PAGE HEADINGS */
+  .schools-header h1,
+  .programs-header h1,
+  .courses-header h1,
+  .materials-header h1 {
+    font-size: 30px;
+  }
+
+  .schools-header,
+  .programs-header,
+  .courses-header,
+  .materials-header {
+    padding: 50px 15px;
+  }
+
+  /* GRIDS */
+  .programs-grid,
+  .courses-grid,
+  .material-grid,
+  .materials-options,
+  .intake-options,
+  .intake-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .school-card {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+
+  .section-heading h2 {
+    font-size: 29px;
+  }
+
+  .why-content h2 {
+    font-size: 30px;
+  }
+
+  .why-features {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+}
