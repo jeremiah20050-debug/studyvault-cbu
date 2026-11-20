@@ -1,3 +1,16 @@
+@media (max-width: 600px) {
+  .home-logo h1 {
+    font-size: 11px !important;
+    letter-spacing: 0 !important;
+  }
+
+  .home-logo img {
+    width: 50px !important;
+    height: 50px !important;
+}
+}
+
+
 /* =========================
    TOP BAR
 ========================= */
@@ -1431,18 +1444,21 @@ body {
     grid-template-columns: 1fr;
   }
 }
-/* STUDENT FINAL POSITION */
+/* STUDENT IMAGE - MOBILE */
 .hero-student {
-  position: absolute;
-  right: -5%;
-  bottom: -5px;
-  z-index: 5;
+    position: absolute;
+    width: 500px !important;
+    height: auto;
+    right: 10px;
+    bottom: -10px;
+    z-index: 2;
 }
 
 .hero-student img {
-  width: 550px;
-  height: auto;
-  display: block;
+    width: 420px !important;
+    max-width: 200vw;
+    height: auto;
+    object-fit: contain;
 }
 .program-button {
   display: inline-block;
@@ -1501,18 +1517,24 @@ body {
   position: absolute !important;
   right: 0 !important;
 }
+
 /* =========================
    STUDYVAULT MOBILE FIX
 ========================= */
 
+/* MOBILE RESPONSIVE FIX */
 @media (max-width: 600px) {
+
+  .home-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
   /* TOP BAR */
   .top-bar {
-    height: auto !important;
-    min-height: 45px;
-    padding: 8px 5px !important;
-    gap: 5px !important;
+    min-height: 40px;
+    height: auto;
+    padding: 6px 5px !important;
     justify-content: center !important;
   }
 
@@ -1521,183 +1543,134 @@ body {
   }
 
   .top-phone {
-    font-size: 11px;
-    letter-spacing: 1px;
-    left: 10px !important;
+    font-size: 10px;
+    left: 8px !important;
     transform: none !important;
   }
 
-  .top-right {
-    right: 5px !important;
+  .top-links {
+    gap: 8px;
   }
 
-  .social-icon {
-    width: 23px;
-    height: 23px;
-    font-size: 13px;
+  .top-links span {
+    display: none;
   }
 
-  .help-button {
-    min-width: 55px;
-    font-size: 12px;
+  .top-links a {
+    font-size: 11px;
   }
 
   /* NAVIGATION */
   .home-navbar {
-    min-height: auto;
-    padding: 15px 10px;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .home-logo {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 10px 8px;
     gap: 5px;
   }
 
+  .home-logo {
+    gap: 4px;
+    flex-shrink: 1;
+  }
+
   .home-logo img {
-    width: 65px;
-    height: 65px;
+    width: 40px;
+    height: 40px;
   }
 
   .home-logo h1 {
-    font-size: 21px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 0;
   }
 
   .home-nav-links {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 6px;
   }
 
   .home-nav-links a {
-    font-size: 13px;
+    font-size: 10px;
+    white-space: nowrap;
   }
 
   .home-nav-links a:nth-child(3),
   .home-nav-links a:nth-child(4) {
-    padding: 7px 12px;
+    padding: 6px 7px;
   }
 
   /* HERO */
   .home-hero {
-    min-height: 500px;
-    padding: 45px 20px;
-    align-items: flex-start;
-    background-position: center;
+    position: relative;
+    min-height: 430px;
+    padding: 30px 15px;
+    overflow: hidden;
   }
 
   .hero-content {
-    margin-top: 10px;
-    z-index: 10;
+    position: relative;
+    z-index: 5;
+    margin-top: 5px;
   }
 
   .hero-content h3 {
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
   }
 
   .hero-content h1 {
-    font-size: 55px;
+    font-size: 42px;
     line-height: 1;
   }
 
   .hero-content h1 span {
-    font-size: 45px;
-    letter-spacing: 3px;
+    font-size: 35px;
+    letter-spacing: 2px;
   }
 
   .hero-description {
-    font-size: 14px;
-    max-width: 260px;
+    font-size: 12px;
   }
 
   /* STUDENT IMAGE */
   .hero-student {
-    height: 300px;
-    width: auto;
-    max-width: 85%;
-    right: -10px;
+    position: absolute;
+    width: 190px;
+    height: auto;
+    right: 0;
     bottom: 0;
     z-index: 2;
   }
 
   .hero-student img {
-    width: 280px;
-    max-width: 85vw;
+    width: 190px;
+    max-width: 50vw;
     height: auto;
   }
 
   /* FEATURE CARDS */
   .home-features {
     grid-template-columns: 1fr;
-    gap: 15px;
-    padding: 20px 15px;
+    gap: 12px;
+    padding: 15px;
   }
 
   .feature-card {
-    min-height: 180px;
-    padding: 25px 20px;
-    border-radius: 25px;
+    min-height: 150px;
   }
 
-  .feature-card h2 {
-    font-size: 23px;
-  }
-
-  .feature-card p {
-    font-size: 15px;
-  }
-
-  /* OTHER PAGE HEADINGS */
-  .schools-header h1,
-  .programs-header h1,
-  .courses-header h1,
-  .materials-header h1 {
-    font-size: 30px;
-  }
-
-  .schools-header,
-  .programs-header,
-  .courses-header,
-  .materials-header {
-    padding: 50px 15px;
-  }
-
-  /* GRIDS */
-  .programs-grid,
-  .courses-grid,
-  .material-grid,
-  .materials-options,
-  .intake-options,
-  .intake-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .school-card {
-    margin: 30px 15px;
-    padding: 25px;
-  }
-
-  .section-heading h2 {
-    font-size: 29px;
-  }
-
-  .why-content h2 {
-    font-size: 30px;
-  }
-
-  .why-features {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footer-links {
-    flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .home-navbar .home-logo h1 {
+    font-size: 16px !important;
+    letter-spacing: 0 !important;
+    line-height: 1 !important;
   }
 }
